@@ -38,7 +38,15 @@ def attack_pok(message):
 def start(message):
     if message.from_user.username in Pokemon.pokemons.keys():
         pok = Pokemon.pokemons[message.from_user.username]
-        bot.send_message(message.chat.id, Pokemon.info)
+        bot.send_message(message.chat.id, Pokemon(pok).info())
+    else:
+        bot.send_message(message.chat.id, "У вас нету покемонов.")
+
+@bot.message_handler(commands=['feed'])
+def start(message):
+    if message.from_user.username in Pokemon.pokemons.keys():
+        pok = Pokemon.pokemons[message.from_user.username]
+        bot.send_message(message.chat.id, Pokemon(pok).feed())
     else:
         bot.send_message(message.chat.id, "У вас нету покемонов.")
 
