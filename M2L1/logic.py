@@ -88,18 +88,18 @@ class Fighter(Pokemon):
             self.power -= ultrapower
             return result + f"\nБоец применил супер-атаку силой:{self.ultrapower}!!!"
 
-if __name__ == '__main__':
-    wizard = Wizard("username1")
-    fighter = Fighter("username2")
-    print(wizard.info())
-    print()
-    print(fighter.info())
-    print()
-    print(fighter.attack(wizard))
-    print(wizard.feed())
-    print(fighter.feed())
-    print(wizard.feed())
-    print(fighter.feed())
-    time.sleep(20)
-    print(wizard.feed())
-    print(fighter.feed())
+#if __name__ == '__main__':
+    #wizard = Wizard("username1")
+    #fighter = Fighter("username2")
+    #print(wizard.info())
+    #print()
+    #print(fighter.info())
+    #print()
+    #print(fighter.attack(wizard))
+    #print(wizard.feed())
+    #print(fighter.feed())
+    #print(wizard.feed())
+    #print(fighter.feed())
+    #time.sleep(20)
+    #print(wizard.feed())
+    #print(fighter.feed())

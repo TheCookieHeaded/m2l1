@@ -35,18 +35,18 @@ def attack_pok(message):
             bot.send_message(message.chat.id, "Чтобы атаковать, нужно ответить на сообщения того, кого хочешь атаковать")
 
 @bot.message_handler(commands=['info'])
-def start(message):
+def infobot(message):
     if message.from_user.username in Pokemon.pokemons.keys():
         pok = Pokemon.pokemons[message.from_user.username]
-        bot.send_message(message.chat.id, Pokemon(pok).info())
+        bot.send_message(message.chat.id, pok.info())
     else:
         bot.send_message(message.chat.id, "У вас нету покемонов.")
 
 @bot.message_handler(commands=['feed'])
-def start(message):
+def feedbot(message):
     if message.from_user.username in Pokemon.pokemons.keys():
         pok = Pokemon.pokemons[message.from_user.username]
-        bot.send_message(message.chat.id, Pokemon(pok).feed())
+        bot.send_message(message.chat.id, pok.feed())
     else:
         bot.send_message(message.chat.id, "У вас нету покемонов.")
 
