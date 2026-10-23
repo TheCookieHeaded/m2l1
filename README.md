@@ -15,4 +15,4 @@
 _~~тут должна быть шутка про сервера, но я жить не устал~~_
 
 ![вкусно и точк](https://assets.turbologo.ru/blog/ru/2024/10/24035648/logo-vkusnoitochka.png "кто не понял  в кусн   и  точк")
-я хочу вкусно и точк [https://vkusnoitochka.ru/menu/populyarnoe](##эт вксн и тчк)
+я хочу вкусно и точк [https://vkusnoitochka.ru/menu/populyarnoe] (##эт вксн и тчк)
